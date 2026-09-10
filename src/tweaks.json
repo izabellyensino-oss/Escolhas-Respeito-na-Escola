@@ -1,0 +1,47 @@
+{
+  "gameTitle": {
+    "type": "text",
+    "value": "Escolhas: Respeito na Escola",
+    "name": "Título do Jogo",
+    "group": "Geral"
+  },
+  "initialRespect": {
+    "type": "number",
+    "value": 50,
+    "min": 10,
+    "max": 100,
+    "step": 5,
+    "name": "Respeito Inicial",
+    "group": "Gameplay",
+    "description": "Nível inicial de Respeito Geral da escola."
+  },
+  "initialEmpathy": {
+    "type": "number",
+    "value": 50,
+    "min": 10,
+    "max": 100,
+    "step": 5,
+    "name": "Empatia Inicial",
+    "group": "Gameplay",
+    "description": "Nível inicial de Empatia entre os estudantes."
+  },
+  "initialAwareness": {
+    "type": "number",
+    "value": 40,
+    "min": 10,
+    "max": 100,
+    "step": 5,
+    "name": "Consciência Inicial",
+    "group": "Gameplay",
+    "description": "Nível inicial de Consciência de gênero na escola."
+  },
+  "soundVolume": {
+    "type": "number",
+    "value": 0.5,
+    "min": 0,
+    "max": 1,
+    "step": 0.1,
+    "name": "Volume do Som",
+    "group": "Áudio"
+  }
+}
