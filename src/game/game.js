@@ -1373,7 +1373,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       evalText = "Incrível! Você tomou a decisão correta e assertiva em todas as 7 situações práticas da escola. Você demonstrou profunda empatia e conhecimento exemplar sobre igualdade de gênero, ajudando a combater ativamente o machismo.";
     } else if (correctAnswers >= 4) {
       evalTitle = "Agente de Mudança do Campus!";
-      evalText = "Parabéns! Você acertou a maioria das situações práticas e promoveu o diálogo construtivo. Pequenos ajustes de posicionamento em situações desafiadoras te transformarão em um líder completo de igualdade!";
+      evalText = "Parabéns! Você acertou a maioria das situações práticas e promoveu o diálogo construtivo. Pequenos ajustes de posicionamento em situações desafiadoras te transformarão em um(a) líder completo(a) de igualdade!";
     } else {
       evalTitle = "Refletindo e Aprendendo";
       evalText = "Bom esforço! Muitas microagressões de gênero ocorrem de forma invisível. Que tal jogar novamente para descobrir como escolhas mais assertivas e baseadas no diálogo e respeito podem transformar a escola?";
