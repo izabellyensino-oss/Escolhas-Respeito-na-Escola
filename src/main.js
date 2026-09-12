@@ -1,5 +1,5 @@
 import sdk from "@playabl/sdk";
-import { createGame } from "../game/game.js";
+import { createGame } from "./game/game.js";
 import tweaksManifest from "./tweaks.json";
 import assetsManifest from "./assets.json";
 import "./styles.css";
