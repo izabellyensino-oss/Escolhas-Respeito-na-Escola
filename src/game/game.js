@@ -1141,12 +1141,8 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
     }
   }
 
-  // Lidar com a seleção de uma escolha
- function selectChoice(choice) {
-  //... seu código de cima continua igual...
-
-  // Contabilizar Acertos e Erros - respostas corretas intercaladas
-  const correctMap = {
+  // MAPA GLOBAL DE RESPOSTAS CERTAS - B,C,A,C,A,B,B
+  const CORRECT_MAP = {
     chap1: "B",
     chap2: "C",
     chap3: "A",
@@ -1156,27 +1152,33 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
     chap7: "B"
   };
 
-  const chapKeyTemp = `chap${state.chapterIndex + 1}`;
-  const correctOption = correctMap[chapKeyTemp];
+  // Lidar com a seleção de uma escolha
+  function selectChoice(choice) {
+    // Contabilizar Acertos e Erros - respostas corretas intercaladas
+    const chapKeyTemp = `chap${state.chapterIndex + 1}`;
+    const correctOption = CORRECT_MAP[chapKeyTemp];
 
-  if (choice.option === correctOption) {
-    correctAnswers++;
-  } else {
-    incorrectAnswers++;
-  }
+    if (choice.option === correctOption) {
+      correctAnswers++;
+    } else {
+      incorrectAnswers++;
+    }
 
     // Registrar estatística no banco de dados local
     const chapKey = `chap${state.chapterIndex + 1}`;
-    if (statsDatabase[chapKey] && statsDatabase[chapKey][choice.option] !== undefined) {
+    if (statsDatabase[chapKey] && statsDatabase[chapKey][choice.option]!== undefined) {
       statsDatabase[chapKey][choice.option]++;
     }
 
     updateStats(choice.stats);
-    showPedagogicalFeedback(choice);
+
+    // passa se acertou ou não para o feedback
+    const isCorrect = choice.option === correctOption;
+    showPedagogicalFeedback(choice, isCorrect);
   }
 
   // Mostrar balão pedagógico explicando a situação
-  function showPedagogicalFeedback(choice) {
+  function showPedagogicalFeedback(choice, isCorrect) {
     const feedbackOverlay = document.createElement("div");
     feedbackOverlay.className = "feedback-overlay visible";
 
@@ -1184,21 +1186,20 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
     for (const [stat, val] of Object.entries(choice.stats)) {
       if (val === 0) continue;
       const isPlus = val > 0;
-      const label = stat === "respect" ? "Respeito" : stat === "empathy" ? "Empatia" : "Consciência";
-      const icon = stat === "respect" ? "✊" : stat === "empathy" ? "💙" : "💡";
+      const label = stat === "respect"? "Respeito" : stat === "empathy"? "Empatia" : "Consciência";
+      const icon = stat === "respect"? "✊" : stat === "empathy"? "💙" : "💡";
       statsHtml += `
-        <span class="feedback-stat-item ${isPlus ? 'plus' : 'minus'}">
-          ${icon} ${label} ${isPlus ? '+' : ''}${val}%
+        <span class="feedback-stat-item ${isPlus? 'plus' : 'minus'}">
+          ${icon} ${label} ${isPlus? '+' : ''}${val}%
         </span>
       `;
     }
 
-    const isCorrect = choice.option === "C";
-
+    // AGORA USA O isCorrect QUE VEIO DO selectChoice, NÃO MAIS O "C" FIXO
     feedbackOverlay.innerHTML = `
-      <div class="feedback-card" style="border-color: ${isCorrect ? '#38ef7d' : '#ff4081'}">
-        <h3 class="feedback-title" style="color: ${isCorrect ? '#38ef7d' : '#ff4081'}">
-          ${isCorrect ? "✅ Resposta Correta!" : "❌ Resposta Incorreta!"}
+      <div class="feedback-card" style="border-color: ${isCorrect? '#38ef7d' : '#ff4081'}">
+        <h3 class="feedback-title" style="color: ${isCorrect? '#38ef7d' : '#ff4081'}">
+          ${isCorrect? "✅ Resposta Correta!" : "❌ Resposta Incorreta!"}
         </h3>
         <h4 style="font-family:'Fredoka', sans-serif; font-size:1.05rem; margin: 4px 0 10px 0; color:#e0d9ff;">
           ${choice.feedback.title}
@@ -1219,11 +1220,11 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       feedbackOverlay.style.opacity = 0;
       setTimeout(() => {
         feedbackOverlay.remove();
-        
+
         state.inReaction = true;
         state.reactionIndex = 0;
         state.reactionKey = choice.feedback.nextStep;
-        
+
         processDialogueStep();
       }, 300);
     });
