@@ -180,7 +180,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
               stats: { respect: 0, empathy: +5, awareness: -5 },
               feedback: {
                 title: "Mudança Omissiva",
-                text: "Lucas não incentiva o comportamento, mas sua mudança de assunto pode ser interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.",
+                text: "`Lucas não incentiva o comportamento, mas sua mudança de assunto pode ser interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.`",
                 nextStep: "dialog_lucas_silent"
               }
             },
@@ -190,7 +190,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
               stats: { respect: +15, empathy: +20, awareness: +25 },
               feedback: {
                 title: "Atitude e Respeito",
-                text: "Incrível! Chamar a atenção dos próprios amigos sobre atitudes machistas exige coragem, mas é fundamental. Lucas desconstrói a pressão de grupo e promove uma masculinidade baseada em empatia e respeito.",
+                text: "`Incrível! Chamar a atenção dos próprios amigos sobre atitudes machistas exige coragem, mas é fundamental. Lucas desconstrói a pressão de grupo e promove uma masculinidade baseada em empatia e respeito.`",
                 nextStep: "dialog_lucas_stoodup"
               }
             }
