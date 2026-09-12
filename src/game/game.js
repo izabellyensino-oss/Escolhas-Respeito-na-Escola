@@ -166,17 +166,17 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Ah, sei lá... Dou um 6 também. Ela é bonitinha. (Rir junto)'",
+              text: "Ah, sei lá... Dou um 6 também. Ela é bonitinha. (Rir junto)",
               stats: { respect: -15, empathy: -15, awareness: -20 },
               feedback: {
                 title: "Objetificação e Cumplicidade",
-                text: "Na hora Lucas foi aceito no grupo. Só que depois você ficou pensando se a menina ia gostar de saber que estavam dando nota pra ela."",
+                text: "Na hora Lucas foi aceito no grupo. Só que depois você ficou pensando se a menina ia gostar de saber que estavam dando nota pra ela.",
                 nextStep: "dialog_lucas_conformed"
               }
             },
             {
               option: "B",
-              text:"Eu nem reparei, vamos mudar de assunto. Vocês viram o jogo ontem?'",
+              text:"Eu nem reparei, vamos mudar de assunto. Vocês viram o jogo ontem?",
               stats: { respect: 0, empathy: +5, awareness: -5 },
               feedback: {
                 title: "Mudança Omissiva",
@@ -257,7 +257,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "Dá para calar a boca, Mateus? Eu estava falando! E você sempre me corta!'",
+              text: "Dá para calar a boca, Mateus? Eu estava falando! E você sempre me corta!",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "O Estereótipo da 'Mulher Raivosa'",
@@ -267,7 +267,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "C",
-              text: "Tudo bem. Explica você primeiro, deixa isso quieto, eu explico depois.'",
+              text: "Tudo bem. Explica você primeiro, deixa isso quieto, eu explico depois.",
               stats: { respect: -10, empathy: -5, awareness: -15 },
               feedback: {
                 title: "Ceder o Seu Espaço",
