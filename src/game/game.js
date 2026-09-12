@@ -1142,15 +1142,28 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
   }
 
   // Lidar com a seleção de uma escolha
-  function selectChoice(choice) {
-    triggerHaptic(70);
+ function selectChoice(choice) {
+  //... seu código de cima continua igual...
 
-    // Contabilizar Acertos e Erros (Opção C é sempre o diálogo construtivo e assertivo!)
-    if (choice.option === "C") {
-      correctAnswers++;
-    } else {
-      incorrectAnswers++;
-    }
+  // Contabilizar Acertos e Erros - respostas corretas intercaladas
+  const correctMap = {
+    chap1: "B",
+    chap2: "C",
+    chap3: "A",
+    chap4: "C",
+    chap5: "A",
+    chap6: "B",
+    chap7: "B"
+  };
+
+  const chapKeyTemp = `chap${state.chapterIndex + 1}`;
+  const correctOption = correctMap[chapKeyTemp];
+
+  if (choice.option === correctOption) {
+    correctAnswers++;
+  } else {
+    incorrectAnswers++;
+  }
 
     // Registrar estatística no banco de dados local
     const chapKey = `chap${state.chapterIndex + 1}`;
