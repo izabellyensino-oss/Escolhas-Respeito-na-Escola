@@ -89,17 +89,17 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Ceder ao comentário: 'Ah, pode ser... Acho que futebol é muito bruto para mim mesmo. Fico com as redes sociais da equipe.'",
-              stats: { respect: -10, empathy: -10, awareness: -15 },
+              text: "'Tudo bem, não precisa. Eu vou montar um time só de meninas e a gente mostra em quadra quem é quem no interclasse. Boa sorte pra vocês lá.'",
+              stats: { respect: -5, empathy: 5, awareness: -10 },
               feedback: {
                 title: "Estereótipo de Gênero nos Esportes",
-                text: "Ao ceder, Júlia se afasta de uma atividade que ama por causa de uma barreira social e machista de que meninas devem ser apenas decorativas ou ajudantes. Isso reforça a exclusão e o silenciamento.",
+                text: "Parece mais fácil evitar o conflito, ela mostrou força, mas acabou aceitando a exclusão. O problema não era criar outro time, era ela ter o direito de estar NESSE time. Isso reforça a exclusão e o silenciamento.",
                 nextStep: "dialog_julia_ceded"
               }
             },
             {
               option: "B",
-              text: "Reagir com agressividade: 'Que besteira! Sou muito melhor de bola do que você e metade desse time de perna de pau. Quem é você para me barrar?'",
+              text: "'Que besteira, eu sou muito melhor de bola do que você e metade desse time. Quem é você para me barrar?'",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Reação Defensiva e Conflito",
@@ -109,7 +109,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "C",
-              text: "Posicionar-se com firmeza e fatos: 'Marcos, a capacidade atlética não tem relação com gênero. Eu treino sério, sou rápida e posso fortalecer muito o ataque do time. Vamos fazer um teste prático na quadra?'",
+              text: "'Marcos, então me deixa provar? me coloca 10 min hoje, pra te mostrar que sou rápida e posso fortalecer muito o ataque do time. E se eu for ruim, eu mesma saio e nem encho mais.'",
               stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
                 title: "Assertividade e Conquista de Espaço",
@@ -122,16 +122,16 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       ],
       reactions: {
         dialog_julia_ceded: [
-          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Isso aí, Júlia! Vai ser ótimo ter você de líder de torcida animando a gente!" },
-          { type: "dialogue", speaker: "Júlia", avatar: "julia", text: "(Triste)... É, acho que futebol é coisa de menino mesmo." }
+          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text:"Ah, beleza então. Boa sorte montando seu time aí." },
+          { type: "dialogue", speaker: "Júlia", avatar: "julia", text: "(Decidida, mas chateada) É o jeito. A gente se encontra no interclasse e vê quem joga mais." }
         ],
         dialog_julia_angry: [
           { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Eita, Júlia! Que mau humor! Não precisa apelar, só fiz uma crítica. Viu como garotas são descontroladas?" },
-          { type: "dialogue", speaker: "Júlia", avatar: "julia", text: "Não estou descontrolada! Só cansei desse papinho machista de vocês!" }
+          { type: "dialogue", speaker: "Júlia", avatar: "julia", text: "Não tô descontrolada! Só cansei desse papinho machista de que menina não joga nada!" }
         ],
         dialog_julia_constructive: [
-          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Ah... bem, você tem razão. Desculpa, não quis te subestimar. Vamos fazer um teste de chute a gol agora mesmo!" },
-          { type: "dialogue", speaker: "Júlia", avatar: "julia", text: "Perfeito! Preparem-se, porque eu não vim para brincadeira!" }
+          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text:"Ah... tá, justo. Foi mal, não quis te diminuir. Faz o seguinte, mostra no chute o gol agora?" },
+          { type: "dialogue", speaker: "Júlia", avatar: "julia", text:  "Fechado! Se prepara, que eu não vim aqui pra brincadeira não!" }
         ]
       }
     },
