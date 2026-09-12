@@ -152,7 +152,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           type: "dialogue",
           speaker: "Mateus",
           avatar: "mateus",
-          text: "Ei, galera, olhem lá! Aquela aluna nova que acabou de passar... Que nota vocês dão para ela? Uma nota 5 ou 6? Que corpo, hein?"
+          text: "Ei, galera, olhem lá! Aquela aluna nova que acabou de passar... Que nota vocês dão para ela em?"
         },
         {
           type: "dialogue",
@@ -166,30 +166,30 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Seguir o grupo para ser aceito: 'Ah, sei lá... Dou um 6 também. Ela é bonitinha. (Rir junto)'",
+              text: "Ah, sei lá... Dou um 6 também. Ela é bonitinha. (Rir junto)'",
               stats: { respect: -15, empathy: -15, awareness: -20 },
               feedback: {
                 title: "Objetificação e Cumplicidade",
-                text: "Ao rir e atribuir notas, Lucas valida a cultura de objetificação das mulheres e o machismo estrutural. Isso reduz as meninas a meros objetos de avaliação física e reforça um ambiente escolar desrespeitoso.",
+                text: "Na hora Lucas foi aceito no grupo. Só que depois você ficou pensando se a menina ia gostar de saber que estavam dando nota pra ela."",
                 nextStep: "dialog_lucas_conformed"
               }
             },
             {
               option: "B",
-              text: "Ficar em silêncio e ignorar: 'Ah, prefiro não opinar... Vou ali comprar um lanche.' (E se afasta)",
+              text:"Eu nem reparei, vamos mudar de assunto. Vocês viram o jogo ontem?'",
               stats: { respect: 0, empathy: +5, awareness: -5 },
               feedback: {
-                title: "Silêncio Omissivo",
-                text: "Lucas não incentiva o comportamento, mas seu silêncio é interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.",
+                title: "Mudança Omissiva",
+                text: "Lucas não incentiva o comportamento, mas sua mudança de assunto pode ser interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.",
                 nextStep: "dialog_lucas_silent"
               }
             },
             {
               option: "C",
-              text: "Questionar a atitude do grupo: 'Pô, galera, que mancada fazer isso. Imagina se fizessem isso com as nossas amigas ou irmãs? Elas não são mercadoria para receber nota. Vamos mudar de assunto.'",
+              text: "Pô galera, que mancada fazer isso. Imagina se fizessem isso com alguma amiga ou irmã? Deixem ela em paz",
               stats: { respect: +15, empathy: +20, awareness: +25 },
               feedback: {
-                title: "Aliado Ativo e Masculinidade Saudável",
+                title: "Atitude e Respeito",
                 text: "Incrível! Chamar a atenção dos próprios amigos sobre atitudes machistas exige coragem, mas é fundamental. Lucas desconstrói a pressão de grupo e promove uma masculinidade baseada em empatia e respeito.",
                 nextStep: "dialog_lucas_stoodup"
               }
@@ -200,15 +200,15 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       reactions: {
         dialog_lucas_conformed: [
           { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Aí sim, Lucas! Sabia que você era dos nossos!" },
-          { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "(Pensando triste)... Por que fiz isso? Me senti muito mal de participar disso." }
+          { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "(Pensando triste)... Por que eu ri disso? Nem foi engraçado." }
         ],
         dialog_lucas_silent: [
-          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Ih, o Lucas ficou sem graça e correu de fininho! Que careta, cara." },
-          { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "(Pensando)... Eu devia ter falado alguma coisa para defendê-la..." }
+          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Que jogo? A gente tá falando da menina nova, cara. Tá querendo desviar o assunto?" },
+          { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "(Pensando)... Tentei mudar de assunto mas não adiantou. Eles continuaram falando." }
         ],
         dialog_lucas_stoodup: [
           { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Pô... foi mal. É só zoeira, né? Mas... parando para pensar, de fato é meio chato mesmo." },
-          { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "Pois é, caras. Respeito vem primeiro sempre." }
+          { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "Pois é, caras. Respeito vem primeiro sempre. É só deixar ela tranquila." }
         ]
       }
     },
