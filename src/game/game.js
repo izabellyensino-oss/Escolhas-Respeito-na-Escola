@@ -99,22 +99,22 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "'Que besteira, eu sou muito melhor de bola do que você e metade desse time. Quem é você para me barrar?'",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
-              feedback: {
-                title: "Reação Defensiva e Conflito",
-                text: "A raiva de Júlia é legítima frente ao machismo, mas reagir de forma ríspida faz com que Marcos se coloque na defensiva e a rotule de 'exagerada' ou 'estressada', perdendo a oportunidade de fazê-lo refletir.",
-                nextStep: "dialog_julia_angry"
-              }
-            },
-            {
-              option: "C",
               text: "'Marcos, então me deixa provar? me coloca 10 min hoje, pra te mostrar que sou rápida e posso fortalecer muito o ataque do time. E se eu for ruim, eu mesma saio e nem encho mais.'",
               stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
                 title: "Assertividade e Conquista de Espaço",
                 text: "Excelente! Posicionar-se de forma assertiva desconstrói o estereótipo diretamente. Júlia afirma sua competência esportiva e exige igualdade de oportunidades, provando seu valor técnico pelo mérito.",
                 nextStep: "dialog_julia_constructive"
+              }
+            },
+            {
+             option: "C",
+              text: "'Que besteira, eu sou muito melhor de bola do que você e metade desse time. Quem é você para me barrar?'",
+              stats: { respect: +5, empathy: -5, awareness: +5 },
+              feedback: {
+                title: "Reação Defensiva e Conflito",
+                text: "A raiva de Júlia é legítima frente ao machismo, mas reagir de forma ríspida faz com que Marcos se coloque na defensiva e a rotule de 'exagerada' ou 'estressada', perdendo a oportunidade de fazê-lo refletir.",
+                nextStep: "dialog_julia_angry"
               }
             }
           ]
@@ -239,40 +239,40 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           type: "dialogue",
           speaker: "Mateus",
           avatar: "mateus",
-          text: "Calma aí, Mari, você está se empolgando muito e complicando. Galera, o que ela quis dizer com essa complexidade toda é que o povo estava sem dinheiro e pronto. Deixa que eu explico a divisão prática..."
+          text: "Calma aí, Mari, você está se empolgando muito e complicando. Galera, deixa que eu explico essa divisão prática..."
         },
         {
           type: "choice",
           prompt: "Como Mariana deve responder para lidar com a interrupção?",
           choices: [
             {
-              option: "A",
-              text: "Ceder a palavra e encolher-se: 'Ah... tudo bem. Explica você, então. Deixa pra lá.'",
-              stats: { respect: -10, empathy: -5, awareness: -15 },
+             option: "A",
+              text: "Mateus, por favor, me deixe terminar de falar, sem interrupções. Eu estudei bastante o tema e quero explicar até o final",
+              stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
-                title: "Manterrupting e Mansplaining",
-                text: "Essa interrupção constante é chamada de 'Manterrupting' (homens interrompendo mulheres desproporcionalmente), seguida de 'Mansplaining' (homem explicando o óbvio como se ela não entendesse). Ceder cala a voz e a liderança de Mariana.",
-                nextStep: "dialog_mariana_ceded"
+                title: "Assertividade Feminina",
+                text: "Brilhante! Mariana impõe limites claros com postura firme e segura, não gritou e nem cedeu, sem dar espaço para que minimizem seu conhecimento. Trazendo o foco de volta para o trabalho.",
+                nextStep: "dialog_mariana_constructive"
               }
             },
             {
               option: "B",
-              text: "Exaltar-se na discussão: 'Dá para calar a boca, Mateus? Eu estava falando! Você é muito chato e sempre me corta!'",
+              text: "Dá para calar a boca, Mateus? Eu estava falando! E você sempre me corta!'",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "O Estereótipo da 'Mulher Raivosa'",
-                text: "A frustração de Mariana é legítima, mas reagir com gritos permite que Mateus se aproveite do estereótipo de 'mulher histérica' ou 'exaltada', desviando o foco do comportamento desrespeitoso dele para a reação dela.",
+                text: "A frustração de Mariana é justa, mas reagir com gritos permite que Mateus se aproveite do estereótipo de 'mulher histérica' ou 'exaltada', desviando o foco do comportamento desrespeitoso dele para a reação dela.",
                 nextStep: "dialog_mariana_angry"
               }
             },
             {
               option: "C",
-              text: "Reafirmar sua voz com firmeza: 'Mateus, por favor, me deixe terminar de falar sem interrupções. Eu estudei bastante o tema e formulei este roteiro lógico. Após eu concluir, você poderá opinar.'",
-              stats: { respect: +20, empathy: +15, awareness: +20 },
+              text: "Tudo bem. Explica você primeiro, deixa isso quieto, eu explico depois.'",
+              stats: { respect: -10, empathy: -5, awareness: -15 },
               feedback: {
-                title: "Assertividade Feminina",
-                text: "Brilhante! Mariana impõe limites claros com postura firme e segura, sem dar espaço para que minimizem seu conhecimento ou silenciem sua voz. Ela reivindica seu legítimo espaço de liderança intelectual.",
-                nextStep: "dialog_mariana_constructive"
+                title: "Ceder o Seu Espaço",
+                text: "Essa interrupção constante é chamada de 'Manterrupting' (homens interrompendo mulheres desproporcionalmente), seguida de 'Mansplaining' (homem explicando o óbvio como se ela não entendesse). Ceder cala a voz e a liderança de Mariana.",
+                nextStep: "dialog_mariana_ceded"
               }
             }
           ]
