@@ -89,7 +89,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "'Tudo bem, não precisa. Eu vou montar um time só de meninas e a gente mostra em quadra quem é quem no interclasse. Boa sorte pra vocês lá.'",
+              text: "Tudo bem, não precisa. Eu vou montar um time só de meninas e a gente mostra em quadra quem é quem no interclasse. Boa sorte pra vocês lá.",
               stats: { respect: -5, empathy: 5, awareness: -10 },
               feedback: {
                 title: "Estereótipo de Gênero nos Esportes",
@@ -99,7 +99,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "'Marcos, então me deixa provar? me coloca 10 min hoje, pra te mostrar que sou rápida e posso fortalecer muito o ataque do time. E se eu for ruim, eu mesma saio e nem encho mais.'",
+              text: "Marcos, então me deixa provar? me coloca 10 min hoje, pra te mostrar que sou rápida e posso fortalecer muito o ataque do time. E se eu for ruim, eu mesma saio e nem encho mais.",
               stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
                 title: "Assertividade e Conquista de Espaço",
@@ -109,7 +109,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
              option: "C",
-              text: "'Que besteira, eu sou muito melhor de bola do que você e metade desse time. Quem é você para me barrar?'",
+              text: "Que besteira, eu sou muito melhor de bola do que você e metade desse time. Quem é você para me barrar?",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Reação Defensiva e Conflito",
@@ -257,7 +257,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "Dá para calar a boca, Mateus? Eu estava falando! E você sempre me corta!",
+              text: "Dá pra ficar quieto, Mateus? Eu estava falando! E você sempre me corta!",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "O Estereótipo da 'Mulher Raivosa'",
@@ -324,17 +324,17 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Ceder passivamente: 'Tudo bem, meninas. Vamos varrer logo para ir embora de uma vez.'",
+              text: "Tudo bem, meninas. Vamos varrer logo para ir embora de uma vez.'",
               stats: { respect: -10, empathy: -5, awareness: -15 },
               feedback: {
                 title: "Reforço de Papéis Domésticos",
-                text: "Ao aceitar, Gabriela perpetua o viés inconsciente de que as tarefas domésticas e de limpeza são atribuições essencialmente femininas, enquanto os homens ficam apenas com o trabalho físico externo.",
+                text: "Ao aceitar, Gabriela perpetua o viés inconsciente de que as tarefas domésticas e de limpeza são atribuições essencialmente femininas, enquanto os homens ficam apenas com o trabalho 'pesado'.",
                 nextStep: "dialog_gabi_ceded"
               }
             },
             {
               option: "B",
-              text: "Reagir com agressividade: 'Ah, sim! Porque nós nascemos com vassoura na mão e vocês com músculos, né? Não vou varrer nada! Isso é ridículo!'",
+              text: "Ah, sim! Porque nós nascemos com vassoura na mão, né? Não vou varrer nada! Isso é ridículo! todo mundo sujou.",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Confronto não Produtivo",
@@ -344,7 +344,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "C",
-              text: "Propor uma divisão mista: 'Professor, todos nós sujamos a sala e todos nós podemos limpar. Que tal dividirmos em duplas mistas? Uma parte varre e a outra carrega as caixas, independente de gênero.'",
+              text: "Professor, todos nós sujamos a sala e todos nós podemos limpar. Que tal uma parte varre e a outra carrega as caixas?",
               stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
                 title: "Cooperação e Igualdade Prática",
@@ -365,7 +365,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           { type: "dialogue", speaker: "Gabriela", avatar: "julia", text: "Não queremos ser poupadas, queremos igualdade!" }
         ],
         dialog_gabi_constructive: [
-          { type: "dialogue", speaker: "Professor", avatar: "mateus", text: "Você tem toda razão, Gabriela. Peço desculpas. Vamos dividir em duplas mistas agora mesmo." },
+          { type: "dialogue", speaker: "Professor", avatar: "mateus", text: "Você tem toda razão, Gabriela. Peço desculpas. Vamos dividir em duplas mistas." },
           { type: "dialogue", speaker: "Gabriela", avatar: "julia", text: "Excelente! Assim todos ajudamos e terminamos muito mais rápido." }
         ]
       }
@@ -387,7 +387,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           type: "dialogue",
           speaker: "Marcos",
           avatar: "marcos",
-          text: "E aí, Rodrigão? Vai ficar rebolando e dançando com as meninas? Homem de verdade joga bola! Entra aí no time se for homem!"
+          text: "E aí, Rodrigão? Vai ficar ai dançando com as meninas? Homem de verdade joga bola! Entra aí no time se for homem!"
         },
         {
           type: "dialogue",
@@ -401,32 +401,32 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Forçar-se a jogar para ser aceito: 'Ah... tá bom. Eu jogo então, só para vocês pararem com essa palhaçada.'",
-              stats: { respect: -10, empathy: -10, awareness: -15 },
+              text: "Dança também é esporte, e tem que ter muito preparo. Isso não me faz ser menos homem que vocês. Cada um faz o que gosta.",
+              stats: { respect: +20, empathy: +20, awareness: +25 },
               feedback: {
-                title: "Conformismo à Masculinidade Tóxica",
-                text: "Ao ceder, Rodrigo anula seus próprios gostos e se submete a uma pressão violenta apenas para provar que se encaixa em uma caixinha estreita do que os outros definem como 'ser homem'.",
-                nextStep: "dialog_rod_ceded"
+                title: "Masculinidade Saudável",
+                text: "Fantástico! Rodrigo se posiciona com imensa maturidade. Ele desconstrói a ideia de que a masculinidade está atrelada a esportes brutos e valida a sensibilidade e a arte como espaços masculinos.",
+                nextStep: "dialog_rod_constructive"
               }
             },
             {
               option: "B",
-              text: "Ofender de volta: 'Calem a boca, seus ogros ignorantes! Vocês só pensam em chutar uma bola, bando de idiotas sem cérebro!'",
+              text: "Pior são vocês que só sabem chutar bola ahaha! Bando de idiotas.",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Agressividade e Escala de Tensão",
-                text: "Embora Rodrigo esteja se defendendo de uma agressão, responder na mesma moeda de hostilidade apenas reforça a rivalidade e faz com que os garotos o ataquem ainda mais.",
+                text: "Embora Rodrigo esteja se defendendo de uma agressão, responder na mesma moeda de hostilidade e deboche apenas reforça a rivalidade e faz com que os garotos o ataquem ainda mais.",
                 nextStep: "dialog_rod_angry"
               }
             },
             {
-              option: "C",
-              text: "Reafirmar sua identidade: 'Galera, dança e teatro exigem coordenação e preparo físico incríveis. E eu não preciso chutar uma bola para provar minha masculinidade. Cada um joga o que gosta.'",
-              stats: { respect: +20, empathy: +20, awareness: +25 },
+             option: "C",
+              text: "Já que vocês tão me enchendo, eu jogo, só para mostrar pra vocês que sou bom de bola e também pararem com essa palhaçada.",
+              stats: { respect: -10, empathy: -10, awareness: -15 },
               feedback: {
-                title: "Masculinidade Saudável e Plural",
-                text: "Fantástico! Rodrigo se posiciona com imensa maturidade. Ele desconstrói a ideia de que a masculinidade está atrelada a esportes brutos e valida a sensibilidade e a arte como espaços masculinos legítimos.",
-                nextStep: "dialog_rod_constructive"
+                title: "Conformismo à Masculinidade Tóxica",
+                text: "Ao ceder, Rodrigo anula seus próprios gostos e se submete a uma pressão violenta apenas para provar que se encaixa no que os outros definem como 'ser homem'.",
+                nextStep: "dialog_rod_ceded"
               }
             }
           ]
@@ -434,15 +434,15 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       ],
       reactions: {
         dialog_rod_ceded: [
-          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Viu só? Sabia que no fundo você queria jogar! Corre lá para a zaga!" },
+          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Viu só? Sabia que no fundo você queria jogar! Corre lá para o campo!" },
           { type: "dialogue", speaker: "Rodrigo", avatar: "lucas", text: "(Pensando desanimado)... Detesto isso, me sinto péssimo fingindo ser quem não sou." }
         ],
         dialog_rod_angry: [
-          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Eita, bicho! O bailarino ficou bravo! Cuidado que ele vai morder, galera! Ahaha!" },
+          { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Eita! O Rodrigo dançarino ficou bravo! Cuidado que ele vai morder, galera! Ahaha!" },
           { type: "dialogue", speaker: "Rodrigo", avatar: "lucas", text: "Não estou bravo, vocês que são uns infantis desrespeitosos!" }
         ],
         dialog_rod_constructive: [
-          { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Pô... de fato, o ensaio de dança deles parece bem cansativo mesmo. Foi mal aí, Rodrigo, joga lá sua dança." },
+          { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Pô... de fato, cada um faz oque gosta. O ensaio de dança deles parece ser bem cansativo mesmo. Foi mal aí, Rodrigo." },
           { type: "dialogue", speaker: "Rodrigo", avatar: "lucas", text: "Obrigado. Respeito mútuo faz bem para todo mundo." }
         ]
       }
@@ -458,19 +458,19 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       steps: [
         {
           type: "narrator",
-          text: "No corredor, Letícia dobrou levemente as mangas da camisa do seu uniforme do IF Baiano para se refrescar do calor."
+          text: "No corredor, Letícia estava com a bermuda do uniforme um pouco acima do joelho por causa do calor.",
         },
         {
           type: "dialogue",
           speaker: "Coordenador",
           avatar: "mateus",
-          text: "Letícia, por favor, abaixe as mangas da camisa. Esse comportamento chama atenção desnecessária e acaba distraindo e provocando os rapazes na hora das aulas."
+          text: "Letícia, por favor, ajeita essa bermuda. Desse jeito você chama atenção desnecessária e acaba distraindo os rapazes na hora das aulas."
         },
         {
           type: "dialogue",
           speaker: "Letícia",
           avatar: "mariana",
-          text: "Ué... mas está fazendo quase 30 graus hoje. E meu uniforme está cobrindo tudo direito."
+          text: "Ué... mas está fazendo quase 30 graus hoje. E minha bermuda está cobrindo tudo direito."
         },
         {
           type: "choice",
@@ -487,23 +487,23 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
               }
             },
             {
-              option: "B",
-              text: "Confrontar grosseiramente: 'A gola e a manga deles também estão curtas e ninguém fala nada! Vocês são muito hipócritas e machistas! Vão cuidar de outra coisa!'",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
-              feedback: {
-                title: "Ataque Ríspido",
-                text: "Embora Letícia aponte uma clara hipocrisia de dois pesos e duas medidas, a forma ríspida faz com que o coordenador a puna por indisciplina, abafando o debate sobre gênero.",
-                nextStep: "dialog_let_angry"
-              }
-            },
-            {
-              option: "C",
+               option: "B",
               text: "Questionar de forma lógica: 'Coordenador, as mangas dos meninos também estão dobradas pelo calor e isso não é problema. A atenção deles deve ser cobrada deles mesmos, não do tamanho do meu uniforme.'",
               stats: { respect: +20, empathy: +15, awareness: +25 },
               feedback: {
                 title: "Combate aos Dois Pesos e Duas Medidas",
                 text: "Excelente! Letícia aponta com lógica o duplo padrão de julgamento da escola e transfere a responsabilidade do foco e do respeito para os próprios meninos, que é onde realmente deve estar.",
                 nextStep: "dialog_let_constructive"
+              }
+            },
+            {
+             option: "C",
+              text: "Confrontar grosseiramente: 'A gola e a manga deles também estão curtas e ninguém fala nada! Vocês são muito hipócritas e machistas! Vão cuidar de outra coisa!'",
+              stats: { respect: +5, empathy: -5, awareness: +5 },
+              feedback: {
+                title: "Ataque Ríspido",
+                text: "Embora Letícia aponte uma clara hipocrisia de dois pesos e duas medidas, a forma ríspida faz com que o coordenador a puna por indisciplina, abafando o debate sobre gênero.",
+                nextStep: "dialog_let_angry"
               }
             }
           ]
@@ -564,23 +564,23 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
               }
             },
             {
-              option: "B",
-              text: "Apenas ignorar: Não fala nada no grupo, deleta a foto do próprio celular e finge que não viu.",
-              stats: { respect: 0, empathy: +5, awareness: -5 },
-              feedback: {
-                title: "Omissão Diante da Violência",
-                text: "Felipe não comete o crime de espalhar, o que é melhor, mas seu silêncio permite que a violência continue ocorrendo livremente no grupo de amigos sem nenhuma oposição moral.",
-                nextStep: "dialog_fel_silent"
-              }
-            },
-            {
-              option: "C",
+               option: "B",
               text: "Intervir de forma ativa: 'Galera, parem com isso! Isso é crime grave de exposição e machismo puro. Apaguem essa foto e não repassem para ninguém. Tenham o mínimo de respeito e empatia pela colega.'",
               stats: { respect: +25, empathy: +25, awareness: +30 },
               feedback: {
                 title: "Intervenção e Proteção Ativa",
                 text: "Excepcional! A melhor atitude possível. Homens aliados intervindo ativamente no grupo de WhatsApp de amigos é a ferramenta mais eficaz para frear a disseminação de assédio e crimes digitais contra mulheres.",
                 nextStep: "dialog_fel_constructive"
+              }
+            },
+            {
+              option: "C",
+              text: "Apenas ignorar: Não fala nada no grupo, deleta a foto do próprio celular e finge que não viu.",
+              stats: { respect: 0, empathy: +5, awareness: -5 },
+              feedback: {
+                title: "Omissão Diante da Violência",
+                text: "Felipe não comete o crime de espalhar, o que é melhor, mas seu silêncio permite que a violência continue ocorrendo livremente no grupo de amigos sem nenhuma oposição moral.",
+                nextStep: "dialog_fel_silent"
               }
             }
           ]
