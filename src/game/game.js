@@ -411,7 +411,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "Pior são vocês que só sabem chutar bola ahaha! Bando de idiotas.",
+              text: "Pior são vocês que só sabem chutar bola ahaha! Bando de incompetentes.",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Agressividade e Escala de Tensão",
@@ -478,7 +478,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Sentir vergonha e ceder: 'Desculpa... vou abaixar as mangas e colocar um casaco para não incomodar mais.'",
+              text: "Desculpa... vou colocar uma calça por cima para não incomodar mais.",
               stats: { respect: -10, empathy: -5, awareness: -15 },
               feedback: {
                 title: "Culpa e Submissão",
@@ -488,7 +488,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
                option: "B",
-              text: "Questionar de forma lógica: 'Coordenador, as mangas dos meninos também estão dobradas pelo calor e isso não é problema. A atenção deles deve ser cobrada deles mesmos, não do tamanho do meu uniforme.'",
+              text: "Coordenador, os meninos também estão de bermuda acima do joelho por causa do calor, e ninguém fala nada. Por que só a minha incomoda?'. A atenção deles deve ser cobrada deles mesmos, não do tamanho do meu uniforme.",
               stats: { respect: +20, empathy: +15, awareness: +25 },
               feedback: {
                 title: "Combate aos Dois Pesos e Duas Medidas",
@@ -498,7 +498,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
              option: "C",
-              text: "Confrontar grosseiramente: 'A gola e a manga deles também estão curtas e ninguém fala nada! Vocês são muito hipócritas e machistas! Vão cuidar de outra coisa!'",
+              text: "A bermuda deles também tá acima do joelho e ninguém fala nada! Vocês são muito hipócritas e machistas! Vão cuidar de outra coisa!",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Ataque Ríspido",
@@ -519,7 +519,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           { type: "dialogue", speaker: "Letícia", avatar: "mariana", text: "Isso é muito injusto e vocês sabem!" }
         ],
         dialog_let_constructive: [
-          { type: "dialogue", speaker: "Coordenador", avatar: "mateus", text: "Hum... de fato, o calor está forte para todos e as regras devem valer igualmente. Peço desculpas, Letícia, pode manter as mangas dobradas." },
+          { type: "dialogue", speaker: "Coordenador", avatar: "mateus", text: "Hum... de fato, o calor está forte para todos e as regras devem valer igualmente. Peço desculpas, Letícia. Vou conversar com a diretoria sobre o uniforme no calor." },
           { type: "dialogue", speaker: "Letícia", avatar: "mariana", text: "Muito obrigada, coordenador. O bom senso e a igualdade devem guiar a escola." }
         ]
       }
@@ -541,13 +541,13 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           type: "dialogue",
           speaker: "Marcos",
           avatar: "marcos",
-          text: "E aí, galera! Olhem essa foto que vazou da Luana da outra sala! Que vacilo dela, hein? Mandem para todo mundo!"
+          text: "E aí, galera! Olhem essa foto que vazou da menina da outra sala! Que vacilo dela, hein? Mandem para todo mundo!"
         },
         {
           type: "dialogue",
           speaker: "Mateus",
           avatar: "mateus",
-          text: "Caraca, compartilha logo no grupo de futsal também! Ela quis se expor, agora aguenta! Ahaha!"
+          text: "Caraca, compartilha logo no grupo do jogo também! Ela quis se expor, agora aguenta! Ahaha!"
         },
         {
           type: "choice",
@@ -555,7 +555,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Compartilhar para ganhar status: 'Nossa! Repassa mesmo! Vou mandar para o grupo do condomínio também. (Repassa a foto)'",
+              text: " Caramba, pesado. Já que todo mundo já viu, não tem problema compartilhar né, vou mandar pro grupo do futsal pra eles verem também." ,
               stats: { respect: -25, empathy: -25, awareness: -30 },
               feedback: {
                 title: "Exposição Criminosa e Violência Digital",
@@ -565,17 +565,17 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
                option: "B",
-              text: "Intervir de forma ativa: 'Galera, parem com isso! Isso é crime grave de exposição e machismo puro. Apaguem essa foto e não repassem para ninguém. Tenham o mínimo de respeito e empatia pela colega.'",
+              text: "Galera, parem com isso! Isso é crime grave de exposição e pode acabar com a vida dela na escola. Apaguem essa foto e não repassem para ninguém. Tenham o mínimo de respeito e empatia pela colega.",
               stats: { respect: +25, empathy: +25, awareness: +30 },
               feedback: {
                 title: "Intervenção e Proteção Ativa",
-                text: "Excepcional! A melhor atitude possível. Homens aliados intervindo ativamente no grupo de WhatsApp de amigos é a ferramenta mais eficaz para frear a disseminação de assédio e crimes digitais contra mulheres.",
+                text: "Excepcional! A melhor atitude possível. Homens aliados intervindo ativamenteno no próprio grupo de amigos é a ferramenta mais eficaz para frear a disseminação de assédio e crimes digitais contra mulheres.",
                 nextStep: "dialog_fel_constructive"
               }
             },
             {
               option: "C",
-              text: "Apenas ignorar: Não fala nada no grupo, deleta a foto do próprio celular e finge que não viu.",
+              text: "Não fala nada no grupo, para não se enturmar no assunto. Deleta a foto do próprio celular e finge que não viu.",
               stats: { respect: 0, empathy: +5, awareness: -5 },
               feedback: {
                 title: "Omissão Diante da Violência",
@@ -589,11 +589,11 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       reactions: {
         dialog_fel_ceded: [
           { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Isso aí, Felipe! Sabia que você curtia uma zoeira! Essa foto vai bombar!" },
-          { type: "dialogue", speaker: "Felipe", avatar: "mateus", text: "(Pensando com peso na consciência)... Por que eu fiz isso? Luana vai ficar arrasada na escola." }
+          { type: "dialogue", speaker: "Felipe", avatar: "mateus", text: "(Pensando com peso na consciência)... (Pensando com peso na consciência)...Por que eu fiz isso? A menina vai ficar arrasada na escola." }
         ],
         dialog_fel_silent: [
           { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Ué, o Felipe visualizou e nem comentou nada, deve estar dormindo." },
-          { type: "dialogue", speaker: "Felipe", avatar: "mateus", text: "(Pensando)... Sinto que deveria ter defendido a Luana, o pessoal é muito cruel." }
+          { type: "dialogue", speaker: "Felipe", avatar: "mateus", text: "(Pensando)... Sinto que deveria ter intervido nessa ação horrível, o pessoal é muito cruel." }
         ],
         dialog_fel_constructive: [
           { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Eita... foi mal, Felipe. Você tem razão, bicho. É pisada na bola mesmo. Vou apagar aqui para não dar ruim." },
@@ -621,7 +621,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
     },
     {
       id: 3,
-      bad: "Mulher é muito emocional para lidar com exatas e robôs.",
+      bad: "Mulher é muito emocional para lidar com exatas e jogos.",
       good: "Mulheres lideram na ciência, engenharia e lógica com excelência!",
       erased: false,
       progress: 0
