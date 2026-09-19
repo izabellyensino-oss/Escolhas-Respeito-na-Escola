@@ -1553,12 +1553,19 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
 
     shell.appendChild(dash);
 
-    // Efeito de preenchimento animado de todos os 7 gráficos
+       // Efeito de preenchimento animado de todos os 7 gráficos
     setTimeout(() => {
       for (let i = 1; i <= 7; i++) {
-        document.getElementById(`bar-${i}-A`).style.width = `${percs[`p${i}A`]}%`;
-        document.getElementById(`bar-${i}-B`).style.width = `${percs[`p${i}B`]}%`;
-        document.getElementById(`bar-${i}-C`).style.width = `${percs[`p${i}C`]}%`;
+        ['A','B','C'].forEach(letra => {
+          const bar = document.getElementById(`bar-${i}-${letra}`);
+          if (!bar) return;
+          bar.style.width = `${percs[`p${i}${letra}`]}%`;
+
+          const ehCorreta = letra === gabarito[i];
+          bar.style.background = ehCorreta
+          ? 'linear-gradient(90deg, #22c55e, #4ade80)'
+            : 'linear-gradient(90deg, #3f3f46, #52525b)';
+        });
       }
     }, 200);
 
