@@ -99,7 +99,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "Marcos, então me deixa provar? me coloca 10 min hoje, pra te mostrar que sou rápida e posso fortalecer muito o ataque do time. E se eu for ruim, eu mesma saio e nem encho mais.",
+              text: "Marcos, me coloca 10 minutos hoje no ataque. Sou rápida e jogo muito. Topa ver esse time ganhar?",
               stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
                 title: "Assertividade e Conquista de Espaço",
