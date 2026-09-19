@@ -787,7 +787,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           btn.textContent = "Entrar no IF Baiano";
         }
         if (lbl) {
-          lbl.textContent = "";
+          lbl.textContent = "Tudo pronto para começar!";
         }
 
         const canvas = document.getElementById("intro-canvas");
