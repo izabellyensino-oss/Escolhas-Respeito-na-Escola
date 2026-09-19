@@ -566,7 +566,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
                option: "B",
               text: "Galera, parem com isso! Isso é crime grave de exposição e pode acabar com a vida dela na escola. Apaguem essa foto e não repassem para ninguém. Tenham o mínimo de respeito e empatia pela colega.",
-              stats: { respect: +25, empathy: +25, awareness: +30 },
+              stats: { respect: +25, empathy: +25, awareness: +25 },
               feedback: {
                 title: "Intervenção e Proteção Ativa",
                 text: "Excepcional! A melhor atitude possível. Homens aliados intervindo ativamenteno no próprio grupo de amigos é a ferramenta mais eficaz para frear a disseminação de assédio e crimes digitais contra mulheres.",
