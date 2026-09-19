@@ -180,17 +180,17 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
               stats: { respect: 0, empathy: +5, awareness: -5 },
               feedback: {
                 title: "Mudança Omissiva",
-                text: "`Lucas não incentiva o comportamento, mas sua mudança de assunto pode ser interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.`",
+                text: "Lucas não incentiva o comportamento, mas sua mudança de assunto pode ser interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.",
                 nextStep: "dialog_lucas_silent"
               }
             },
             {
               option: "C",
-              text: "Pô galera, que mancada fazer isso. Imagina se fizessem isso com alguma amiga ou irmã? Deixem ela em paz",
+              text: "Pô galera, que mancada fazer isso. Imagina se fizessem isso com alguma amiga ou irmã? Deixem ela em paz.",
               stats: { respect: +15, empathy: +20, awareness: +25 },
               feedback: {
                 title: "Atitude e Respeito",
-                text: "`Incrível! Chamar a atenção dos próprios amigos sobre atitudes machistas exige coragem, mas é fundamental. Lucas desconstrói a pressão de grupo e promove uma masculinidade baseada em empatia e respeito.`",
+                text: "Incrível! Chamar a atenção dos próprios amigos sobre atitudes machistas exige coragem, mas é fundamental. Lucas desconstrói a pressão de grupo e promove uma masculinidade baseada em empatia e respeito.",
                 nextStep: "dialog_lucas_stoodup"
               }
             }
@@ -199,7 +199,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       ],
       reactions: {
         dialog_lucas_conformed: [
-          { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Aí sim, Lucas! Sabia que você era dos nossos!" },
+          { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Aí sim, Lucas! Sabia que você era dos nossos." },
           { type: "dialogue", speaker: "Lucas", avatar: "lucas", text: "(Pensando triste)... Por que eu ri disso? Nem foi engraçado." }
         ],
         dialog_lucas_silent: [
@@ -247,7 +247,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
              option: "A",
-              text: "Mateus, por favor, me deixe terminar de falar, sem interrupções. Eu estudei bastante o tema e quero explicar até o final",
+              text: "Mateus, por favor, me deixe terminar de falar, sem interrupções. Eu estudei bastante o tema e quero explicar até o final.",
               stats: { respect: +20, empathy: +15, awareness: +20 },
               feedback: {
                 title: "Assertividade Feminina",
@@ -257,7 +257,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "B",
-              text: "Dá pra ficar quieto, Mateus? Eu estava falando! E você sempre me corta!",
+              text: "Dá pra ficar quieto, Mateus? Eu estava falando! E você sempre me corta.",
               stats: { respect: +5, empathy: -5, awareness: +5 },
               feedback: {
                 title: "O Estereótipo da 'Mulher Raivosa'",
@@ -324,7 +324,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           choices: [
             {
               option: "A",
-              text: "Tudo bem, meninas. Vamos varrer logo para ir embora de uma vez.'",
+              text: "Tudo bem, meninas. Vamos varrer logo para ir embora de uma vez.",
               stats: { respect: -10, empathy: -5, awareness: -15 },
               feedback: {
                 title: "Reforço de Papéis Domésticos",
@@ -387,7 +387,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
           type: "dialogue",
           speaker: "Marcos",
           avatar: "marcos",
-          text: "E aí, Rodrigão? Vai ficar ai dançando com as meninas? Homem de verdade joga bola! Entra aí no time se for homem!"
+          text: "E aí, Rodrigão? Vai ficar ai dançando com as meninas? Homem de verdade joga bola! Entra aí no time se for homem."
         },
         {
           type: "dialogue",
@@ -488,7 +488,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
                option: "B",
-              text: "Coordenador, os meninos também estão de bermuda acima do joelho por causa do calor, e ninguém fala nada. Por que só a minha incomoda?'. A atenção deles deve ser cobrada deles mesmos, não do tamanho do meu uniforme.",
+              text: "Os meninos também estão de bermuda acima do joelho por causa do calor, e ninguém fala nada. Por que só a minha incomoda?. A atenção deles deve ser cobrada deles mesmos, não do tamanho do meu uniforme.",
               stats: { respect: +20, empathy: +15, awareness: +25 },
               feedback: {
                 title: "Combate aos Dois Pesos e Duas Medidas",
@@ -589,7 +589,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       reactions: {
         dialog_fel_ceded: [
           { type: "dialogue", speaker: "Marcos", avatar: "marcos", text: "Isso aí, Felipe! Sabia que você curtia uma zoeira! Essa foto vai bombar!" },
-          { type: "dialogue", speaker: "Felipe", avatar: "mateus", text: "(Pensando com peso na consciência)... (Pensando com peso na consciência)...Por que eu fiz isso? A menina vai ficar arrasada na escola." }
+          { type: "dialogue", speaker: "Felipe", avatar: "mateus", text: "(Pensando com peso na consciência)...Por que eu fiz isso? A menina vai ficar arrasada na escola." }
         ],
         dialog_fel_silent: [
           { type: "dialogue", speaker: "Mateus", avatar: "mateus", text: "Ué, o Felipe visualizou e nem comentou nada, deve estar dormindo." },
