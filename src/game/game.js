@@ -1554,20 +1554,20 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
     shell.appendChild(dash);
 
        // Efeito de preenchimento animado de todos os 7 gráficos
-    setTimeout(() => {
-      for (let i = 1; i <= 7; i++) {
-        ['A','B','C'].forEach(letra => {
-          const bar = document.getElementById(`bar-${i}-${letra}`);
-          if (!bar) return;
-          bar.style.width = `${percs[`p${i}${letra}`]}%`;
-
-          const ehCorreta = letra === gabarito[i];
-          bar.style.background = ehCorreta
-          ? 'linear-gradient(90deg, #22c55e, #4ade80)'
-            : 'linear-gradient(90deg, #3f3f46, #52525b)';
-        });
-      }
-    }, 200);
+   setTimeout(() => {
+  for (let i = 1; i <= 7; i++) {
+    ['A','B','C'].forEach(letra => {
+      const bar = document.getElementById(`bar-${i}-${letra}`);
+      if (!bar) return;
+      bar.style.width = `${percs[`p${i}${letra}`]}%`;
+      const correta = gabarito[`chap${i}`] || gabarito[i];
+      const ehCorreta = letra === correta;
+      bar.style.background = ehCorreta
+       ? 'linear-gradient(90deg, #22c55e, #4ade80)'
+        : 'linear-gradient(90deg, #3f3f46, #52525b)';
+    });
+  }
+}, 200);
 
     // Efeito de contagem do score
     let currentScoreCount = 0;
