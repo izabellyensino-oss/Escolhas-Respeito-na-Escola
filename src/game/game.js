@@ -1458,203 +1458,89 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
         <p class="evaluation-text">${evalText}</p>
       </div>
 
-      <!-- SEÇÃO GRÁFICA DE OPINIÃO COMUNITÁRIA (Soma de todos os jogadores) -->
+      <!-- SEÇÃO GRÁFICA DE OPINIÃO COMUNITÁRIA -->
       <div class="chart-section">
         <h3 class="chart-section-title">📊 Estatísticas da Comunidade</h3>
         
-        <!-- Capítulo 1 -->
+        <!-- Capítulo 1 - Correta é B -->
         <div class="chart-card">
           <h4 class="chart-question">1. Inscrição no Futebol (Júlia):</h4>
           <div class="chart-bars">
             <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Ceder)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-1-A" style="width: 0%"></div>
-              </div>
+              <span class="chart-bar-lbl">Opção A</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-1-A" style="width: 0%"></div></div>
               <span class="chart-bar-pct">${percs.p1A}%</span>
             </div>
             <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Raiva)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-1-B" style="width: 0%"></div>
-              </div>
+              <span class="chart-bar-lbl">Opção B</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-1-B" style="width: 0%"></div></div>
               <span class="chart-bar-pct">${percs.p1B}%</span>
             </div>
             <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Firmeza)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-1-C" style="width: 0%"></div>
-              </div>
+              <span class="chart-bar-lbl">Opção C</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-1-C" style="width: 0%"></div></div>
               <span class="chart-bar-pct">${percs.p1C}%</span>
             </div>
           </div>
         </div>
 
-        <!-- Capítulo 2 -->
+        <!-- Capítulo 2 - Correta é C -->
         <div class="chart-card">
           <h4 class="chart-question">2. Julgamento no Corredor (Lucas):</h4>
           <div class="chart-bars">
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Ceder)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-2-A" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p2A}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Silenciar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-2-B" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p2B}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Questionar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-2-C" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p2C}%</span>
-            </div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção A</span><div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-2-A" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p2A}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção B</span><div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-2-B" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p2B}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção C</span><div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-2-C" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p2C}%</span></div>
           </div>
         </div>
 
-        <!-- Capítulo 3 -->
+        <!-- Capítulo 3 - Correta é A -->
         <div class="chart-card">
           <h4 class="chart-question">3. Interrupção na Aula (Mariana):</h4>
           <div class="chart-bars">
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Ceder)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-3-A" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p3A}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Exaltar-se)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-3-B" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p3B}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Assertiva)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-3-C" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p3C}%</span>
-            </div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção A</span><div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-3-A" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p3A}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção B</span><div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-3-B" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p3B}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção C</span><div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-3-C" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p3C}%</span></div>
           </div>
         </div>
 
-        <!-- Capítulo 4 -->
+        <!-- Capítulo 4 - Correta é C -->
         <div class="chart-card">
           <h4 class="chart-question">4. Limpeza da Sala (Gabriela):</h4>
           <div class="chart-bars">
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Ceder)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-4-A" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p4A}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Gritar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-4-B" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p4B}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Mista)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-4-C" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p4C}%</span>
-            </div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção A</span><div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-4-A" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p4A}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção B</span><div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-4-B" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p4B}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção C</span><div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-4-C" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p4C}%</span></div>
           </div>
         </div>
 
-        <!-- Capítulo 5 -->
+        <!-- Capítulo 5 - Correta é A -->
         <div class="chart-card">
           <h4 class="chart-question">5. Provocação na Quadra (Rodrigo):</h4>
           <div class="chart-bars">
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Jogar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-5-A" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p5A}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Ofender)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-5-B" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p5B}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Posicionar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-5-C" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p5C}%</span>
-            </div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção A</span><div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-5-A" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p5A}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção B</span><div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-5-B" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p5B}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção C</span><div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-5-C" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p5C}%</span></div>
           </div>
         </div>
 
-        <!-- Capítulo 6 -->
+        <!-- Capítulo 6 - Correta é B -->
         <div class="chart-card">
           <h4 class="chart-question">6. Julgamento da Farda (Letícia):</h4>
           <div class="chart-bars">
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Sentir Culpa)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-6-A" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p6A}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Reagir)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-6-B" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p6B}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Questionar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-6-C" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p6C}%</span>
-            </div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção A</span><div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-6-A" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p6A}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção B</span><div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-6-B" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p6B}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção C</span><div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-6-C" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p6C}%</span></div>
           </div>
         </div>
 
-        <!-- Capítulo 7 -->
+        <!-- Capítulo 7 - Correta é B -->
         <div class="chart-card">
           <h4 class="chart-question">7. Foto no Grupo (Felipe):</h4>
           <div class="chart-bars">
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção A (Repassar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-a" id="bar-7-A" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p7A}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção B (Ignorar)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-b" id="bar-7-B" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p7B}%</span>
-            </div>
-            <div class="chart-bar-row">
-              <span class="chart-bar-lbl">Opção C (Intervir)</span>
-              <div class="chart-bar-track">
-                <div class="chart-bar-fill opt-c" id="bar-7-C" style="width: 0%"></div>
-              </div>
-              <span class="chart-bar-pct">${percs.p7C}%</span>
-            </div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção A</span><div class="chart-bar-track"><div class="chart-bar-fill opt-a" id="bar-7-A" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p7A}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção B</span><div class="chart-bar-track"><div class="chart-bar-fill opt-b" id="bar-7-B" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p7B}%</span></div>
+            <div class="chart-bar-row"><span class="chart-bar-lbl">Opção C</span><div class="chart-bar-track"><div class="chart-bar-fill opt-c" id="bar-7-C" style="width: 0%"></div></div><span class="chart-bar-pct">${percs.p7C}%</span></div>
           </div>
         </div>
       </div>
