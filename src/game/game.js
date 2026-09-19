@@ -110,7 +110,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
              option: "C",
               text: "Que besteira, eu sou muito melhor de bola do que você e metade desse time. Quem é você para me barrar?",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
+              stats: { respect: 0, empathy: -5, awareness: -5 },
               feedback: {
                 title: "Reação Defensiva e Conflito",
                 text: "A raiva de Júlia é legítima frente ao machismo, mas reagir de forma ríspida faz com que Marcos se coloque na defensiva e a rotule de 'exagerada' ou 'estressada', perdendo a oportunidade de fazê-lo refletir.",
@@ -177,7 +177,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "B",
               text:"Eu nem reparei, vamos mudar de assunto. Vocês viram o jogo ontem?",
-              stats: { respect: 0, empathy: +5, awareness: -5 },
+              stats: { respect: 0, empathy: -5, awareness: -5 },
               feedback: {
                 title: "Mudança Omissiva",
                 text: "Lucas não incentiva o comportamento, mas sua mudança de assunto pode ser interpretado pelo grupo como consentimento. A omissão de aliados permite que piadas e atitudes machistas continuem se reproduzindo sem barreiras.",
@@ -258,7 +258,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "B",
               text: "Dá pra ficar quieto, Mateus? Eu estava falando! E você sempre me corta.",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
+              stats: { respect: 0, empathy: -5, awareness: +5 },
               feedback: {
                 title: "O Estereótipo da 'Mulher Raivosa'",
                 text: "A frustração de Mariana é justa, mas reagir com gritos permite que Mateus se aproveite do estereótipo de 'mulher histérica' ou 'exaltada', desviando o foco do comportamento desrespeitoso dele para a reação dela.",
@@ -325,7 +325,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "A",
               text: "Tudo bem, meninas. Vamos varrer logo para ir embora de uma vez.",
-              stats: { respect: -10, empathy: -5, awareness: -15 },
+              stats: { respect: 0, empathy: +5, awareness: -15 },
               feedback: {
                 title: "Reforço de Papéis Domésticos",
                 text: "Ao aceitar, Gabriela perpetua o viés inconsciente de que as tarefas domésticas e de limpeza são atribuições essencialmente femininas, enquanto os homens ficam apenas com o trabalho 'pesado'.",
@@ -335,7 +335,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "B",
               text: "Ah, sim! Porque nós nascemos com vassoura na mão, né? Não vou varrer nada! Isso é ridículo! todo mundo sujou.",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
+              stats: { respect: 0, empathy: -5, awareness: -5 },
               feedback: {
                 title: "Confronto não Produtivo",
                 text: "A indignação com a divisão sexista é justa, mas responder de forma agressiva gera deboche por parte dos meninos e faz o professor ignorar sua queixa legítima.",
@@ -345,7 +345,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "C",
               text: "Professor, todos nós sujamos a sala e todos nós podemos limpar. Que tal uma parte varre e a outra carrega as caixas?",
-              stats: { respect: +20, empathy: +15, awareness: +20 },
+              stats: { respect: +20, empathy: +15, awareness: +25 },
               feedback: {
                 title: "Cooperação e Igualdade Prática",
                 text: "Brilhante! Gabriela propõe uma solução justa, colaborativa e lógica, quebrando estereótipos de força ou cuidado e ensinando que todos na escola compartilham as mesmas responsabilidades.",
@@ -412,7 +412,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "B",
               text: "Pior são vocês que só sabem chutar bola ahaha! Bando de incompetentes.",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
+              stats: { respect: 0, empathy: -5, awareness: -5 },
               feedback: {
                 title: "Agressividade e Escala de Tensão",
                 text: "Embora Rodrigo esteja se defendendo de uma agressão, responder na mesma moeda de hostilidade e deboche apenas reforça a rivalidade e faz com que os garotos o ataquem ainda mais.",
@@ -422,7 +422,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
              option: "C",
               text: "Já que vocês tão me enchendo, eu jogo, só para mostrar pra vocês que sou bom de bola e também pararem com essa palhaçada.",
-              stats: { respect: -10, empathy: -10, awareness: -15 },
+              stats: { respect: 0, empathy: -10, awareness: +5 },
               feedback: {
                 title: "Conformismo à Masculinidade Tóxica",
                 text: "Ao ceder, Rodrigo anula seus próprios gostos e se submete a uma pressão violenta apenas para provar que se encaixa no que os outros definem como 'ser homem'.",
@@ -479,7 +479,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
               option: "A",
               text: "Desculpa... vou colocar uma calça por cima para não incomodar mais.",
-              stats: { respect: -10, empathy: -5, awareness: -15 },
+              stats: { respect: 5, empathy: -5, awareness: 0 },
               feedback: {
                 title: "Culpa e Submissão",
                 text: "Ao se desculpar, Letícia aceita a premissa machista de que as mulheres são as responsáveis pelo comportamento e pela falta de autocontrole dos homens, aceitando a repressão do próprio corpo.",
@@ -499,7 +499,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             {
              option: "C",
               text: "A bermuda deles também tá acima do joelho e ninguém fala nada! Vocês são muito hipócritas e machistas! Vão cuidar de outra coisa!",
-              stats: { respect: +5, empathy: -5, awareness: +5 },
+              stats: { respect: 0, empathy: -5, awareness: +5 },
               feedback: {
                 title: "Ataque Ríspido",
                 text: "Embora Letícia aponte uma clara hipocrisia de dois pesos e duas medidas, a forma ríspida faz com que o coordenador a puna por indisciplina, abafando o debate sobre gênero.",
