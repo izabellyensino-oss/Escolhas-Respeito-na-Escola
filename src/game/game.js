@@ -21,15 +21,15 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
   let incorrectAnswers = 0;
 
   // Estatísticas acumuladas de escolhas (banco de dados simulado + escolhas reais persistidas)
-  let statsDatabase = {
-    chap1: { A: 120, B: 245, C: 635 },
-    chap2: { A: 185, B: 310, C: 505 },
-    chap3: { A: 140, B: 280, C: 580 },
-    chap4: { A: 130, B: 210, C: 660 },
-    chap5: { A: 155, B: 290, C: 555 },
-    chap6: { A: 165, B: 190, C: 645 },
-    chap7: { A: 110, B: 240, C: 650 }
-  };
+ let statsDatabase = {
+  chap1: { A: 0, B: 0, C: 0 },
+  chap2: { A: 0, B: 0, C: 0 },
+  chap3: { A: 0, B: 0, C: 0 },
+  chap4: { A: 0, B: 0, C: 0 },
+  chap5: { A: 0, B: 0, C: 0 },
+  chap6: { A: 0, B: 0, C: 0 },
+  chap7: { A: 0, B: 0, C: 0 }
+};
 
   // URLs de Assets predefinidos
   const schoolBgUrl = assets ? assets.get("SCHOOL_BG") : "/generated-assets/school_bg.webp";
