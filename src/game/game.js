@@ -1371,7 +1371,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
     if (mural) mural.remove();
 
     // Calcular pontuação final
-    const finalScore = (respect + empathy + awareness) * 10;
+    const finalScore = Math.round((correctAnswers / 7) * 3000);
     
     // Salvar recorde e estatísticas acumuladas no gameState do Playabl
     if (finalScore > bestScore) {
