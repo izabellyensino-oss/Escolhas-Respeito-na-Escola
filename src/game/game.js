@@ -267,7 +267,7 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
             },
             {
               option: "C",
-              text: "Tudo bem. Explica você primeiro, deixa isso quieto, eu explico depois.",
+              text: "Tudo bem. Explica você primeiro, deixa isso quieto. Eu explico depois.",
               stats: { respect: -10, empathy: -5, awareness: -15 },
               feedback: {
                 title: "Ceder o Seu Espaço",
@@ -1320,14 +1320,14 @@ export function createGame({ mount, sdk, ready, tweaks, assets }) {
       const bar = document.getElementById(`pb-${id}`);
       if (bar) bar.style.width = `${p.progress}%`;
 
-      if (p.progress >= 100) {
+           if (p.progress >= 100) {
         clearInterval(state.erasingInterval);
         p.erased = true;
         p.progress = 100;
         state.erasingPhraseId = null;
         
         triggerHaptic(80);
-        updateStats({ respect: 10, empathy: 10, awareness: 15 });
+        updateStats({ respect: 1, empathy: 1, awareness: 1 });
         
         renderPhrases();
         checkMuralCompletion();
