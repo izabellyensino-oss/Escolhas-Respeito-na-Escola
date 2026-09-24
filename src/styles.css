@@ -1120,17 +1120,3 @@ body {
   .end-actions { margin-top: 8px; gap: 6px; }
 
 }
-#dashboardView .chart-bar-fill {
-  background: #333 !important;
-}
-
-#bar-1-B, #bar-2-C, #bar-3-A, #bar-4-C, #bar-5-A, #bar-6-B, #bar-7-B {
-  background: linear-gradient(90deg, #22c55e, #4ade80) !important;
-}
-#bar-1-A, #bar-2-B, #bar-3-C, #bar-4-A, #bar-5-C, #bar-6-A, #bar-7-C {
-  background: linear-gradient(90deg, #f59e0b, #fbbf24) !important;
-}
-#bar-1-C, #bar-2-A, #bar-3-B, #bar-4-B, #bar-5-B, #bar-6-C, #bar-7-A {
-  background: linear-gradient(90deg, #ef4444, #f87171) !important;
-}
-/* << FIM DO ARQUIVO AQUI */
